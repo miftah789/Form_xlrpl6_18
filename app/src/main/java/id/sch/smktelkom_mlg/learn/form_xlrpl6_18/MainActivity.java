@@ -1,12 +1,11 @@
 package id.sch.smktelkom_mlg.learn.form_xlrpl6_18;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -34,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
         kelas = (Spinner) findViewById(R.id.spinnerkelas);
         tvhasil= (TextView) findViewById(R.id.textView6);
         daftar = (Button) findViewById(R.id.button);
+
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                doProses();
+            }
+        });
+    }
 
 
 
